@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="locomotive.css">
+</head>
+<body>
+    <div id="minicircle">
+
+    </div>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <a href="#"><strong>Sushant Gurung</strong></a>
+                <h4>MENU+</h4>
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <H1 class="boundingelem">Mesh</H1>
+                </div>
+                <div class="blocktext">    
+                    <div class="bounding">
+                     <H1 class="boundingelem" id="secondh1">Universe</H1>
+                    </div>  
+                    <div class="bounding">
+                   <H5 class="boundingelem">Based in Nepal</H5> 
+                </div>
+            </div>
+            <div id="chotiheadings">
+                <div class="bounding">
+                  <h5 class="boundingelem">Available for unisex</h5>
+                 </div>
+                 <div class="bounding">
+                    <h5 class="boundingelem">Kapan,Boudha</h5>
+                 </div>
+            </div>
+            </div>
+            <div id="herofooter">
+                <a href="#">previously worked at yml <i class="ri-arrow-right-up-line"></i></a>
+                <a href="#">protopie ambassador</a>
+                <div id="iconset">
+                  <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                  <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="elem">
+                <img src="1.jpg" alt="">
+                <h1>pure soul</h1>
+                <h5>Summer of 2023</h5>
+            </div>
+            <div class="elem">
+                <img src="2.jpg" alt="">
+                <h1>kaisen</h1>
+                <h5>Summer of 2023</h5>
+            </div>
+            <div class="elem elemlast">
+                <img src="3.jpg" alt="">
+                <h1>sensational</h1>
+                <h5>Summer of 2022</h5>
+            </div>
+        </div>
+        <div id="about">
+            <img src="4.jpg" alt="" height="250px" width="300px">
+            <div id="textabout">
+                <h5>About Us</h5>
+                <p>Welcome to Mesh Universe, where fashion meets innovation. Our clothing brand is dedicated to creating unique, 
+                    high-quality garments that transcend the ordinary. At Mesh Universe, we blend cutting-edge design with sustainable 
+                    practices, ensuring that each piece not only looks fantastic but also feels great and supports a healthier planet. 
+                    Whether you're seeking bold statements or timeless classics, our diverse collections offer something for every style 
+                    aficionado. Join us in exploring a universe where creativity and sustainability intersect, and redefine your wardrobe 
+                    with Mesh Universe.</p>
+                <a href=""><strong>Let's Talk</strong></a>
+            </div>
+        </div>
+        <div id="subscribe">
+            <h3>Follow Us on Instagram<i class="ri-arrow-right-up-line"></i></h3>
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <h5>2024 &copy;</h5>
+                <h5 id="time"></h5>
+            </div>
+            <div id="footerright">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            const formattedTime = `${hours}:${minutes}:${seconds} ${ampm} EST`;
+            document.getElementById('time').textContent = formattedTime;
+        }
+
+        setInterval(updateClock, 1000);  // Update the clock every second
+        updateClock();  // Initial call to display the clock immediately
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
